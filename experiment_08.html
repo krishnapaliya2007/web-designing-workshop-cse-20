@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Profile Card</title>
+
+    <style>
+        /* Main container using flexbox */
+        .container {
+            display: flex;                 /* flexbox enabled */
+            justify-content: center;       /* center horizontally */
+            align-items: center;           /* center vertically */
+            height: 100vh;
+            background-color: #f2f2f2;
+        }
+
+        /* Profile card using flexbox */
+        .card {
+            display: flex;                 /* flexbox */
+            flex-direction: column;        /* items arranged top to bottom */
+            justify-content: center;
+            align-items: center;
+
+            width: 220px;
+            padding: 15px;
+            background-color: white;
+            border: 1px solid black;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        h2, p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="card">
+        <img src="https://via.placeholder.com/100" alt="Student Photo">
+
+        <h2>Student Name</h2>
+        <p>Course: B.Tech</p>
+        <p>Year: 1st Year</p>
+        <p>Email: student@example.com</p>
+    </div>
+
+</div>
+
+</body>
+</html>

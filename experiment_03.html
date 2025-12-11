@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Timetable</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<h1>College Timetable</h1>
+
+<table>
+    <caption><b>Weekly Timetable</b></caption>
+
+    <tr>
+        <th>Day</th>
+        <th>9-10</th>
+        <th>10-11</th>
+        <th>11-12</th>
+        <th>12-1</th>
+    </tr>
+
+    <!-- Monday -->
+    <tr>
+        <th>Monday</th>
+        <td>Maths</td>
+        <td rowspan="2">English</td>
+        <td>Science</td>
+        <td rowspan="5">Lunch</td>
+    </tr>
+
+    <!-- Tuesday -->
+    <tr>
+        <th>Tuesday</th>
+        <td>Physics</td>
+        <td>Chemistry</td>
+    </tr>
+
+    <!-- Wednesday with Nested Table -->
+    <tr>
+        <th>Wednesday</th>
+        <td colspan="2">
+            <table style="width:100%; border:1px solid black;">
+                <tr><th>Activity</th></tr>
+                <tr><td>Quiz</td></tr>
+            </table>
+        </td>
+        <td>Library</td>
+    </tr>
+
+    <!-- Thursday -->
+    <tr>
+        <th>Thursday</th>
+        <td>Maths</td>
+        <td>English</td>
+        <td>Science</td>
+    </tr>
+
+    <!-- Friday -->
+    <tr>
+        <th>Friday</th>
+        <td colspan="2">Workshop</td>
+        <td>Games</td>
+    </tr>
+
+</table>
+
+</body>
+</html>
